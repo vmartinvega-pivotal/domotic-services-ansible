@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: local
+  gather_facts: false
+#  collections:
+#    - iac.foundation_service
+  tasks:
+
+  - name: debug info
+    debug:
+      msg: "Hola"
