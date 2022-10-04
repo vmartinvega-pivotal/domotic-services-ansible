@@ -40,6 +40,7 @@ RUN \
   rm -fr ansible.tar.gz /ansible/docs /ansible/examples /ansible/packaging
 
 # Makes a directory for ansible playbooks
+RUN mkdir -p /domotic-services
 RUN mkdir -p /ansible/playbooks
 # Makes the playbooks directory the working directory
 WORKDIR /ansible/playbooks

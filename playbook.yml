@@ -8,3 +8,10 @@
   - name: debug info
     debug:
       msg: "Hola"
+
+  - name: command
+    command: ls /domotic-services
+    register: salida
+
+  - debug:
+      var: salida
